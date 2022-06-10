@@ -3,6 +3,9 @@ listView('Bootcamp'){
     filterBuildQueue()
     filterExecutors()
     recurse()
+    jobs {
+        regex('devops/.*')
+    }
     columns {
         status()
         weather()
