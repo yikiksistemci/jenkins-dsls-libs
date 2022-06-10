@@ -9,7 +9,7 @@ pipelineJob('Java Pipeline') {
                     groovyScript {
                         script('''
         import jenkins.model.*
-        def docker_registery_list = ["DockerHub", "GitLab Image Registery" ]
+        def docker_registery_list = [ "DockerHub", "GitLab Image Registery" ]
         return docker_registery_list
         ''')
                         fallbackScript('')
@@ -17,6 +17,7 @@ pipelineJob('Java Pipeline') {
                     referencedParameter('')
                 }
     }
+
     definition {
         cpsScm {
             lightweight(true)
@@ -24,12 +25,12 @@ pipelineJob('Java Pipeline') {
                 gitSCM {
                     branches {
                         branchSpec {
-                            name('*/master')
+                            name('*/main')
                         }
                     }
                     userRemoteConfigs {
                         userRemoteConfig {
-                            url('${GIT_REPO_SSH}/misc/jenkins-devops-libs.git')
+                            url('https://github.com/yikiksistemci/node-example.git')
                             credentialsId('github-ssh-private-key')
                             name('origin')
                             refspec('')
