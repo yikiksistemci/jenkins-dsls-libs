@@ -1,10 +1,10 @@
-listView('Bootcamp'){
-    description('Bootcamp Pipelines')
+listView('NodeJS'){
+    description('NodeJS Pipelines')
     filterBuildQueue()
     filterExecutors()
     recurse()
     jobs {
-        regex('*')
+        regex('nodejs-*')
     }
     columns {
         status()
