@@ -4,7 +4,7 @@ listView('Bootcamp'){
     filterExecutors()
     recurse()
     jobs {
-        regex('*')
+        regex('bootcamp-*')
     }
     columns {
         status()
