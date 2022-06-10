@@ -30,7 +30,7 @@ pipelineJob('Java Pipeline') {
                     }
                     userRemoteConfigs {
                         userRemoteConfig {
-                            url('https://github.com/yikiksistemci/node-example.git')
+                            url('git@github.com:yikiksistemci/node-example.git')
                             credentialsId('github-ssh-private-key')
                             name('origin')
                             refspec('')
