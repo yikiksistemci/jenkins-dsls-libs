@@ -1,14 +1,14 @@
 // NGNTest Migration path: jobs/dsls/devops/preprod-jobs/pipeline_prepare_testbox_for_dep_issue.groovy
 
-pipelineJob('Java Pipeline') {
+pipelineJob('JavaPipeline') {
     parameters {
                 activeChoiceReactiveParam('REGISTERY') {
                     description('Select Registery')
                     filterable(true)
                     choiceType('SINGLE_SELECT')
                     groovyScript {
-                        script('["DockerHub", "GitLabRegistery"]')
-                        fallbackScript('')
+                        script('''["DockerHub", "GitLabRegistery"]''')
+                        fallbackScript('"fallback choice"')
                     }
                     referencedParameter('')
                 }
