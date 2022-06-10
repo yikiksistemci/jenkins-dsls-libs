@@ -4,7 +4,7 @@ listView('Bootcamp'){
     filterExecutors()
     recurse()
     jobs {
-        regex('bootcamp/.*')
+        name('job-dsl-plugin')
     }
     columns {
         status()
