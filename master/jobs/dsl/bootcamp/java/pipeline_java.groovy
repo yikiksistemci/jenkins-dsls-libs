@@ -9,7 +9,7 @@ pipelineJob('Java Pipeline') {
                     groovyScript {
                         script('''
         import jenkins.model.*
-        def docker_registery_list = ["DockerHub", "GitLab Image Registery" ];
+        def docker_registery_list = ["DockerHub", "GitLab Image Registery" ]
         return docker_registery_list
         ''')
                         fallbackScript('')
