@@ -2,16 +2,12 @@
 
 pipelineJob('Java Pipeline') {
     parameters {
-                activeChoiceReactiveParam('Registery') {
+                activeChoiceReactiveParam('REGISTERY') {
                     description('Select Registery')
                     filterable(true)
                     choiceType('SINGLE_SELECT')
                     groovyScript {
-                        script('''
-        import jenkins.model.*
-        def docker_registery_list = [ "DockerHub", "GitLab Image Registery" ]
-        return docker_registery_list
-        ''')
+                        script('["DockerHub", "GitLabRegistery"]')
                         fallbackScript('')
                     }
                     referencedParameter('')
