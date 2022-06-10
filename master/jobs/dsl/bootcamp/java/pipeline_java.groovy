@@ -42,7 +42,7 @@ pipelineJob('Java Pipeline') {
                     gitTool('')
                 }
             }
-            scriptPath('./jenkinsfile')
+            scriptPath('./Jenkinsfile')
         }
     }
 }
