@@ -1,6 +1,6 @@
 // NGNTest Migration path: jobs/dsls/devops/preprod-jobs/pipeline_prepare_testbox_for_dep_issue.groovy
 
-pipelineJob('') {
+pipelineJob('JavaPipeline') {
     parameters {
                 activeChoiceReactiveParam('TestBox') {
                     description('Select TestBox')
