@@ -3,7 +3,7 @@ listView('Bootcamp'){
     filterBuildQueue()
     filterExecutors()
     recurse()
-        columns {
+    columns {
         status()
         weather()
         name()
@@ -11,6 +11,6 @@ listView('Bootcamp'){
         lastFailure()
         lastDuration()
         buildButton()
-        lastBuildConsoleColumn()
+        lastBuildConsole()
     }
 }
