@@ -1,9 +1,9 @@
 // NGNTest Migration path: jobs/dsls/devops/preprod-jobs/pipeline_prepare_testbox_for_dep_issue.groovy
 
-pipelineJob('JavaPipeline') {
+pipelineJob('Java Pipeline') {
     parameters {
-                activeChoiceReactiveParam('TestBox') {
-                    description('Select TestBox')
+                activeChoiceReactiveParam('Registery') {
+                    description('Select Registery')
                     filterable(true)
                     choiceType('SINGLE_SELECT')
                     groovyScript {
@@ -24,12 +24,13 @@ pipelineJob('JavaPipeline') {
                 gitSCM {
                     branches {
                         branchSpec {
-                            name('*/main')
+                            name('*/master')
                         }
                     }
                     userRemoteConfigs {
                         userRemoteConfig {
-                            url('https://github.com/yikiksistemci/node-example.git')
+                            url('${GIT_REPO_SSH}/misc/jenkins-devops-libs.git')
+                            credentialsId('github-ssh-private-key')
                             name('origin')
                             refspec('')
                         }
@@ -40,7 +41,7 @@ pipelineJob('JavaPipeline') {
                     gitTool('')
                 }
             }
-            scriptPath('./Jenkinsfile')
+            scriptPath('./jenkinsfile')
         }
     }
 }
