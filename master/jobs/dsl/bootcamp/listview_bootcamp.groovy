@@ -4,7 +4,7 @@ listView('Bootcamp'){
     filterExecutors()
     recurse()
     jobs {
-        regex('devops/.*')
+        regex('NodeJS/.*')
     }
     columns {
         status()
