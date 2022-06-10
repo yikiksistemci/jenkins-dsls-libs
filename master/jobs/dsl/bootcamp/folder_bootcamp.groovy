@@ -8,7 +8,7 @@ folder('Project-A') {
             filterExecutors()
             recurse()
             jobs {
-                regex('project-a-nodejs-*')
+                regex('Project-A/project-a-nodejs-*')
             }
             columns {
                 status()
