@@ -11,7 +11,8 @@ pipelineJob('PythonPipeline') {
                     }
                     userRemoteConfigs {
                         userRemoteConfig {
-                            url('https://github.com/yikiksistemci/content-pipelines-cje-labs.git')
+                            url('git@github.com:yikiksistemci/content-pipelines-cje-labs.git')
+                            credentialsId('github-ssh-private-key')
                             name('origin')
                             refspec('')
                         }
