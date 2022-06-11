@@ -10,6 +10,7 @@ pipelineJob('NodeJSPipeline') {
                     }
                     referencedParameter('')
                 }
+                textParam("IMAGETAG", 'Lutfen vermek istediginiz image-tagi seciniz...')
     }
 
     definition {
