@@ -4,7 +4,7 @@ listView('NodeJS'){
     filterExecutors()
     recurse()
     jobs {
-        regex('NodeJS*')
+        name('NodeJSPipeline')
     }
     columns {
         status()
