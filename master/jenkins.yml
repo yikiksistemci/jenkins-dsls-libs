@@ -79,7 +79,7 @@ jenkins:
             dockerTemplateBase:
               cpuPeriod: 0
               cpuQuota: 0
-              image: "jenkins/jnlp-agent-python"
+              image: "yunusyasar/jnlp-agent-python"
             instanceCapStr: "10"
             labelString: "jenkins-slave-python"
             name: "jenkins-slave-python"
