@@ -12,7 +12,7 @@ job('Java SeedJobs Bootcamp') {
     }
     steps {
       jobDsl {
-        targets('master/jobs/dsl/seed_jobs/*.groovy')
+        targets('master/jobs/dsl/bootcamp/**/*.groovy')
         ignoreExisting(true)
       }
     }
