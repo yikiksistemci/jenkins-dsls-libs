@@ -24,7 +24,7 @@ pipelineJob('NodeJSPipeline') {
                     }
                     userRemoteConfigs {
                         userRemoteConfig {
-                            url('git@github.com:yikiksistemci/node-example.git')
+                            url('git@gitlab.com:bootcamp231/node-example.git')
                             credentialsId('github-ssh-private-key')
                             name('origin')
                             refspec('')
