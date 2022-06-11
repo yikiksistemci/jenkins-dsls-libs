@@ -1,0 +1,87 @@
+credentials:
+  system:
+    domainCredentials:
+    - credentials:
+      - usernamePassword:
+          description: "Docker Hub username and password"
+          id: "docker-hub-credentials"
+          password: "{AQAAABAAAAAQJtzhJbZQ0rXYOv7mpdxybhD0q/e85C7zimcXAtlYBYA=}"
+          scope: GLOBAL
+          username: "yunusyasar"
+
+      - usernamePassword:
+          description: "GitLab Registery username and password"
+          id: "gitlab-registery-credentials"
+          password: ${GITLAB_PASSWORD}
+          scope: GLOBAL
+          username: ${GITLAB_USERNAME}
+
+      - basicSSHUserPrivateKey:
+          description: "github-ssh-private-key"
+          id: "github-ssh-private-key"
+          privateKeySource:
+            directEntry:
+              privateKey: "{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}"
+          scope: GLOBAL
+          username: "yikiksistemci"
+          usernameSecret: true
+
+jenkins:
+  systemMessage: "Jenkins configured automatically by Jenkins Configuration as Code plugin\n\n"
+  agentProtocols:
+  - "JNLP4-connect"
+  - "Ping"
+
+  authorizationStrategy:
+    loggedInUsersCanDoAnything:
+      allowAnonymousRead: false
+
+  securityRealm:
+    local:
+      allowsSignup: false
+      enableCaptcha: false
+      users:
+      - id: "admin"
+        name: "admin admin"
+        properties:
+        - preferredProvider:
+            providerId: "default"
+        - "timezone"
+        - mailer:
+            emailAddress: "admin@admin.com"
+        - "apiToken"
+        - "favorite"
+
+      - id: yunusyasar
+        name: "Yunus Yasar"
+        password: "${YUNUSYASAR_PASSWORD}"
+        properties:
+        - preferredProvider:
+            providerId: "default"
+        - "timezone"
+        - mailer:
+            emailAddress: "yunus.yasar@pm.me"
+        - "apiToken"
+        - "favorite"
+  clouds:
+    - docker:
+        containerCap: 25
+        dockerApi:
+          connectTimeout: 60
+          dockerHost:
+            uri: "tcp://192.168.1.51:2375"
+          readTimeout: 60
+        errorDuration: 60
+        exposeDockerHost: true
+        name: "jenkins-slave01"
+        templates:
+          - connector: "attach"
+            dockerTemplateBase:
+              cpuPeriod: 0
+              cpuQuota: 0
+              image: "jenkins/jnlp-agent-python"
+            instanceCapStr: "10"
+            labelString: "jenkins-slave-python"
+            name: "jenkins-slave-python"
+            pullStrategy: PULL_ALWAYS
+            pullTimeout: 300
