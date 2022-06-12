@@ -5,6 +5,7 @@ listView('NodeJS'){
     recurse()
     jobs {
         name('NodeJSPipeline')
+        name('NodeJSPipeline2')
     }
     columns {
         status()
