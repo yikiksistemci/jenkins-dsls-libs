@@ -6,6 +6,7 @@ listView('NodeJS'){
     jobs {
         name('NodeJSPipeline')
         name('NodeJSPipeline2')
+        name('NodeJSPipeline3')
     }
     columns {
         status()
