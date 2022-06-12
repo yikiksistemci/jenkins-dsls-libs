@@ -1,4 +1,4 @@
-pipelineJob('NodeJSPipeline2') {
+pipelineJob('NodeJSPipeline3') {
 
 
     definition {
