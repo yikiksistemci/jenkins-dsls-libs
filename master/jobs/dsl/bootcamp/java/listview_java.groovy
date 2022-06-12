@@ -5,6 +5,7 @@ listView('Java'){
     recurse()
     jobs {
         name('JavaPipeline')
+        name('JavaPipeline2')
     }
     columns {
         status()
