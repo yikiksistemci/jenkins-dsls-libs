@@ -86,6 +86,17 @@ jenkins:
             pullStrategy: PULL_ALWAYS
             pullTimeout: 300
 
+          - connector: "attach"
+            dockerTemplateBase:
+              cpuPeriod: 0
+              cpuQuota: 0
+              image: "jenkins/jnlp-agent-maven"
+            instanceCapStr: "10"
+            labelString: "jenkins-slave-java"
+            name: "jenkins-slave-java"
+            pullStrategy: PULL_ALWAYS
+            pullTimeout: 300
+
 jobs:
   - script: >
       job('SeedJobs Bootcamp') {
