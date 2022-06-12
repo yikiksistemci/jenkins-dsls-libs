@@ -25,7 +25,7 @@ pipelineJob('NodeJSPipeline3') {
                     gitTool('')
                 }
             }
-            scriptPath('./jenkins/Jenkinsfile')
+            scriptPath('./Jenkinsfile')
         }
     }
 }
