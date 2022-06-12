@@ -6,7 +6,7 @@ pipelineJob('JavaPipeline') {
                 gitSCM {
                     branches {
                         branchSpec {
-                            name('*/master')
+                            name('*/main')
                         }
                     }
                     userRemoteConfigs {
