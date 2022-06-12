@@ -6,7 +6,7 @@ pipelineJob('NodeJSPipeline2') {
                 gitSCM {
                     branches {
                         branchSpec {
-                            name('*/main')
+                            name('*/master')
                         }
                     }
                     userRemoteConfigs {
